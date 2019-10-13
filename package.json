@@ -1,11 +1,24 @@
 {
-  "name": "web-site-blog",
+  "name": "single-page-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://github.io/mateo-11/web-site-blog",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateo-11/web-site-blog.git"
+  },
+  "author": "Mateo Naz Jr.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mateo-11/web-site-blog/issues"
+  },
+
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }

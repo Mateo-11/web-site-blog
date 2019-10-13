@@ -33,7 +33,7 @@ function showSlides(n) {
     console.log(message);
 
     let mailToAttr = document.getElementById("sendMail");
-    mailToAttr.setAttribute("href", "mailto:dustinamoda18@gmail.com?subject="+subject+"&body="+message);
+    mailToAttr.setAttribute("href", "mailto:mateonaz11@gmail.com?subject="+subject+"&body="+message);
 }
 
     let date = new Date();
