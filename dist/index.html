@@ -1,144 +1,148 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Blog</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-    
+<html>
+<title>MY BLOG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-    <header>
-        <div class="home">
-        <div class="pic-blog">
-        <h2>PHOTOBLOG</h2>
-    </div>
-        <div class="blog-main">
-            <div class="blog-menu">
-                <ul class="nav-menu">
-                    <li class="menu-item"><a href="#home">HOME</a></li>
-                    <li class="menu-item"><a href="#about">ABOUT BLOG</a></li>
-                    <li class="menu-item"><a href="#pictures">PICTURES</a></li>
-                    <li class="menu-item"><a href="#contact">FEEDBACK</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
 </header>
-<div id="about">
 
-        <div class="about-blog">
-                <h2>ABOUT PHOTOBLOG</h2>
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="img/ewan.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>League of Legends</b></h3>
+      <h5>Title description, <span class="w3-opacity">October 20, 2019</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>What is League of Legends?
+        League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes. With an ever-expanding roster of champions, frequent updates and a thriving tournament scene, League of Legends offers endless replayability for players of every skill level.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
         </div>
-                <p>A photoblog (or photolog) is a form of photo sharing and publishing in the format of a blog. It differs from a blog through the predominant use of and focus on photographs rather than text. Photoblogging (the action of posting photos to a photoblog) gained momentum in the early 2000s with the advent of the moblog and cameraphones.</p>
- </div><!--end line for about-->
-
-<div id = "pictures">
-        <div class="about-blog">
-                <h2>PICTURES</h2>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
         </div>
-        <h2 style="text-align:center">Slideshow Gallery</h2>
+      </div>
+    </div>
+  </div>
+  <hr>
 
-        <div class="container">
-          <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="img/img_woods_wide.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="img/img_5terre_wide.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="img/img_mountains_wide.jpg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="img/img_lights_wide.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="img/img_nature_wide.jpg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="img/img_snow_wide.jpg" style="width:100%">
-          </div>
-            
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-        
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-        
-          <div class="row">
-            <div class="column">
-              <img class="demo cursor" src="img/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="Skins">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-            </div>    
-            <div class="column">
-              <img class="demo cursor" src="img/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-            </div>
-          </div>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="img/ewankonatalaga.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>GAMING IS LIFE</b></h3>
+      <h5>Title description, <span class="w3-opacity">October 20, 2019</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Since then i really love playing computer games especially League of legends.he life of a gamer requires uncommon discipline and perseverance, because the obstacles to success are as numerous outside the game as they are fearsome inside it. Parents won’t respect what you do, but for me it doesn't matter it is my passion and my way to enjoy myself rather than goofing around and doing rebellious things.</p> 
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
         </div>
-    </div> 
-    <div id="contact">
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-badge">2</span></span></p>
         </div>
-    </main>
-</body>   
-
-
-<div class="feedback-blog">
-        <h2>FEEDBACK</h2>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
 </div>
-<footer>
-       
-        <form class="portfolio-form">
-            <h2>Send me a message</h2>
-            <div class="form-row">
-                <label class="form-label">Subject:</label>
-                <div class="form-input">
-                    <input id="mailSubject" class="form-input-text" type="text">
-                    </div>
-                    </div>
 
-                <div class="form-row">
-                    <label class="form-label">Message:</label>
-                    <div class="form-input">
-                        <textarea id="mailMessage" class="form-input-textarea"></textarea>
-                        </div>
-                        </div>
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="img/ewankona.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Mateo S. Naz Jr.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="img/ewan.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">RANKED AWAITS - TEST YOUR SKILLS</span><br>
+        <span></span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="img/ewan1.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">RANKED AWAITS - TEST YOUR SKILLS</span><br>
+        <span></span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="img/ewan2.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">ALWAYS FREE-TO-PLAY, NEVER PAY-TO-WIN</span><br>
+        <span></span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="img/ewan3.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">BONUSES FOR LEAGUE PC PLAYERS</span><br>
+        <span></span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ewan ko</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
 
-                    <div class="form-submit">
-                            <a onmouseover="appendMailTo()" id="sendMail" href="mailto:mateonaz11@gmail.com" class="btn-submit">Submit</a>
-                    </div>
-                    </form> 
-                </div>
-                </footer>
-                <div class="copyright">
-                        Copyright &copy;  
-                        <span id="getYear"></span>
-                </div>
-            </div>
+<!-- END GRID -->
+</div><br>
 
-<script src="js/main.js"></script>
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next &raquo;</button>
+ 
+</footer>
+
+</body>
 </html>
