@@ -1,3 +1,4 @@
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,8 +26,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-
-  function appendMailTo(){
+}
+function appendMailTo(){
     let message = document.getElementById("mailMessage").value;
     let subject = document.getElementById("mailSubject").value;
     console.log(subject);
@@ -36,8 +37,7 @@ function showSlides(n) {
     mailToAttr.setAttribute("href", "mailto:mateonaz11@gmail.com?subject="+subject+"&body="+message);
 }
 
-    let date = new Date();
-    let yearPos = document.getElementById("getYear");
-    let currYear = date.getFullYear();
-    yearPos.innerHTML = currYear;
-}
+let date = new Date();
+let yearPos = document.getElementById("getYear");
+let currYear = date.getFullYear();
+yearPos.innerHTML = currYear;

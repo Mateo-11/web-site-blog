@@ -1,69 +1,222 @@
-* {
-  box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
+html{
+  margin: 0%;
   width: 100%;
-  padding: 20px;
+  font-family:"Algerian";
+  scroll-behavior: smooth;
 }
 
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
+body{
+  margin: 0px;
+  top:0;
+  right: 0;
+}
+.pic-blog h2{
+font-family:"Algerian";
+margin-top: -10px;
+font-size: 50px;
+margin-bottom: 10px;
+text-align:center;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.blog-main{
+background:url(../img/ewan.jpg)no-repeat center center fixed;
+height: 100vh;
+background-size: cover;
+text-align: center;
+color: white;
+position: sticky;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
+.blog-main ul{
+margin: 0px;
+display: flex;
+justify-content: center;
+font-size: 2.8rem;
+padding:20px 0px 50px;
+}
+
+.blog-main ul li{
+list-style: none;
+width: 20%;  
+}
+
+.blog-main  .menu-item a{
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 1000;
+}
+#about p{
+  font-size: 28px;
   text-align: center;
-  background: #ddd;
-  margin-top: 20px;
+  padding-bottom:50px;
+  margin-top:-10px;
+  padding-right:20px;
+  padding-left:20px;
+
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
+.about-blog{
+  font-family:"Algerian";
+  margin-top: 80px;
+  font-size: 40px;
+  text-align:center;
 }
+
+
+
+* {
+box-sizing: border-box;
+}
+
+img {
+vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+.portfolio-form {
+padding: 50px;
+background:url(../img/background.jpg) no-repeat center center fixed;
+background-size: cover;
+  background-color: #bfbfbf;
+  text-align:center;
+  color: white;
+  padding: 30px 450px;
+}
+.portfolio-form h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.form-label {
+  padding: 10px 0px;
+  font-size: 1.3rem;
+}
+.form-input input{
+  width: 100%;
+  padding: 7px 0px;
+  border-radius: 8px;
+}
+.form-input input:focus {
+  transition: .7s;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.form-input-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  width: 100%;
+  padding: 7px 0px;
+  height: 200px;
+}
+
+.form-input-textarea textarea:focus {
+  transition: .7s;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.form-submit {
+  margin-top: 5px;
+  text-align: right;
+}
+.btn-submit {
+  
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+
+}
+.footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background:#6666ff ;
+   background: -webkit-linear-gradient(344.37deg, #EA2626 -21.04%, #0029FF 147.44%);
+    background: -o-linear-gradient(344.37deg, #EA2626 -21.04%, #0029FF 147.44%);
+    background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%); }
